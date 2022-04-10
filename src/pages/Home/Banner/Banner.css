@@ -1,0 +1,109 @@
+#banner__section{
+    padding: 60px 0 120px 0;
+}
+.banner__wrapper{
+    display: grid;
+    grid-template-columns: 329px 361px 1fr;
+    grid-gap: 40px;
+}
+.banner{
+    padding: 40px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+.banner__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.banner .description{
+    color: #FFFFFF;
+}
+
+.banner__btn:link,
+.banner__btn:visited{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #0E133A;
+    background-color: #FFD456;
+    width: 194px;
+    height: 60px;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+
+
+.banner__middle .banner__title,
+.banner__middle .description{
+    color: #0E133A;
+}
+.banner__middle .banner__btn{
+    background-color: #1F33D8;
+    color: #FFF;
+}
+
+/* ============== transparent image ================= */
+.banner:first-child .description{
+    margin-bottom: 172px;
+}
+.banner:nth-child(2) .description{
+    margin-bottom: 172px;
+}
+.replace__img{
+    margin-top: 24px;
+    width: 100%;
+    margin-bottom: 124px;
+}
+
+/* =============== media query ============== */
+@media only screen and (max-width: 1199px){
+    .banner__title{
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .banner__wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .banner__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .banner__wrapper{
+        grid-template-columns: 1FR;
+        grid-gap: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .banner__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .banner {
+        padding: 40px 30px;
+    }
+    .banner:first-child .description{
+        margin-bottom: 150px;
+    }
+    .banner:nth-child(2) .description{
+        margin-bottom: 150px;
+    }
+}

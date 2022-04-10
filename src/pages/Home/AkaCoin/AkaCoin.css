@@ -1,0 +1,149 @@
+#akaCoin__section{
+    padding: 100px 0;
+}
+.akaCoin__header {
+    margin-bottom: 80px;
+}
+h3.akaCoin__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #0E133A;
+
+}
+.akaCoin__null--btn:link,
+.akaCoin__null--btn:visited{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1F33D8;
+    margin-top: 20px;
+    display: inline-block;
+}
+.akaCoin__left-box img {
+    width: 100%;
+}
+.akaCoin__left-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video__mask {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+.play__btn--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.text__play--btn{
+    background-color: #0C20CB;
+    color: #FFF;
+    padding: 21px 30px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 0px 46.5px 46.5px 0px;
+    height: 93px;
+}
+.btn__text span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.btn__text{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+.text__play--btn>button {
+    margin-left: 40px;
+}
+.text__play--btn>button {
+    margin-left: 40px;
+    border: none;
+    background: transparent;
+    font-size: 27px;
+}
+.text__play--btn>button svg path{
+    stroke: #FFF;
+}
+
+.icon__play--btn{
+    width: 92px;
+    height: 92px;
+    background-color: #0C20CB;
+    border: none;
+    border-radius: 50%;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 60px;
+}
+.icon__play--btn svg path{
+    stroke: #FFF;
+}
+
+/* =============== media query =============== */
+@media only screen and (max-width: 991px){
+    h3.akaCoin__title {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .icon__play--btn{
+        width: 70px;
+        height: 70px;
+    }
+    .btn__text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .text__play--btn>button {
+        margin-left: 30px;
+        font-size: 22px;
+    }
+    .icon__play--btn{
+        font-size: 22px;
+    }
+    .text__play--btn{
+        color: #FFF;
+        padding: 10px 20px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .icon__play--btn {
+        right: 10px;
+    }
+    .icon__play--btn{
+        width: 60px;
+        height: 60px;
+    }
+    .text__play--btn{
+        color: #FFF;
+        padding: 10px 20px;
+        height: 60px;
+    }
+    h3.akaCoin__title {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 375px){
+    #akaCoin__section{
+        padding: 60px 0;
+    }
+}

@@ -1,0 +1,104 @@
+#guide__section{
+    padding: 100px 0;
+}
+.guide__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+.guide__thumbnail--wrapper {
+    background-color: #FFD456;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.guide__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+.guide__details{
+    margin-left: 28px;
+}
+.guide__title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #0E133A;
+    margin-bottom: 20px;
+}
+
+/* ================ media query ============== */
+@media only screen and (max-width: 1199px){
+    .guide__title{
+        font-size: 22px;
+    }
+    .guide__wrapper {
+        grid-column-gap: 20px;
+    }
+    .guide__box {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .guide__thumbnail--wrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide__thumbnail--wrapper img{
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .guide__title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .guide__wrapper {
+        grid-column-gap: 10px;
+    }
+    .guide__box {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .guide__thumbnail--wrapper {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide__thumbnail--wrapper img{
+        height: 100px;
+    }
+    .guide__wrapper .description {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .guide__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 375px){
+    .guide__thumbnail--wrapper img {
+        height: 80px;
+    }
+    .guide__thumbnail--wrapper {
+        width: 80px;
+        height: 80px;
+    }
+    .guide__details {
+        margin-left: 20px;
+    }
+    .guide__title {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    #guide__section{
+        padding: 60px 0;
+    }
+}

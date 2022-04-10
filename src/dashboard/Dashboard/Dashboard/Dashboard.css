@@ -1,0 +1,45 @@
+#dashboard{
+    background-color: #F4F7FC;
+}
+.dashboard__wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+.dashboard__header{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.dashboard__body{
+    padding: 40px;
+}
+
+/* ================= media query ================ */
+@media only screen and (max-width: 1199px){
+    .dashboard__wrapper {
+        grid-template-columns: 300px 1fr;
+    }
+    .dashboard__menu--wrapper {
+        padding: 40px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .dashboard__menu--wrapper {
+        padding: 40px 30px;
+    }
+    .dashboard__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 425px){
+    .dashboard__body {
+        padding: 30px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .dashboard__body {
+        padding: 10px;
+    }
+}
